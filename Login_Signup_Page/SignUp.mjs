@@ -3,12 +3,12 @@ import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,Goog
 import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBalzYIBKKPbqOpOO-N4HGS6yEH47AP8Dg",
+    apiKey: "Your API Key here",
     authDomain: "login-for-internship.firebaseapp.com",
     projectId: "login-for-internship",
     storageBucket: "login-for-internship.appspot.com",
     messagingSenderId: "68321352584",
-    appId: "1:68321352584:web:13bb3b568cc969f7c2f83d"
+    appId: "Your APP Id here"
   };
 
 // Initialize Firebase app
