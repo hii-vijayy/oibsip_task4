@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 id="header">Signup</h1>
+            <label for="Name">Name
+                <input type="text" name="name" id="name" placeholder="Name" oninput="capitalizeFirstLetter(this)">
+            </label>
+
+            <label for="phone">Phone Number
+                <input type="tel" id="phone" placeholder="Phone Number">
+            </label>
+            <label for="Username">Username
+                <input id="username" type="email" placeholder="Email">
+            </label>
+
+            <label for="password">Password
+                <input id="password" type="password" placeholder="Password">
+            </label>
+            <button id="signup" type="submit">Sign Up</button>
+            <div class="form">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function capitalizeFirstLetter(input) {
+          // Get the current value of the input field
+          let value = input.value;
+      
+          // Capitalize the first letter
+          value = value.charAt(0).toUpperCase() + value.slice(1);
+      
+          // Update the input field value with the capitalized text
+          input.value = value;
+      }
+    </script>
+    <script type="module" src="SignUp.mjs"></script>
+</body>
+</html>
